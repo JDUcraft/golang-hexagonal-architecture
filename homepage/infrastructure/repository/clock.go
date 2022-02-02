@@ -7,6 +7,8 @@ import (
 type Clock struct {
 }
 
+var Timer = time.Now
+
 func (c Clock) GetTime() string {
-	return time.Now().Format("15:04:05")
+	return Timer().Format("15:04:05")
 }

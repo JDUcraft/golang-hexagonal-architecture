@@ -2,6 +2,6 @@ package application
 
 import "main/homepage/domain"
 
-func ReadTime(timeRepository domain.TimeRepository) string {
-	return "The time is: " + timeRepository.GetTime()
+func ReadTime(clock domain.TimeRepository) string {
+	return "The time is: " + clock.GetTime()
 }
