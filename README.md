@@ -18,10 +18,9 @@ cd golang-hexagonal-architecture
 go run .
 ```
 
+## Dependency graph
 ```mermaid
   graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+      Application --> Domain;
+      Infrastructure --> Domain;
 ```
